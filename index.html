@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siti Zulaiha | Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;600&family=Playfair+Display:ital,wght=0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero-master-container">
+        
+        <header>
+            <div class="logo-container">
+                <img src="Logo Blog.png" alt="Ct Logo" class="blog-logo">
+            </div>
+            <nav class="glass-nav-container">
+                <a href="index.html" class="nav-btn-3d active">Home</a>
+                <a href="about.html" class="nav-btn-3d">About</a>
+                <a href="blog.html" class="nav-btn-3d">Blog</a>
+                <a href="contact.html" class="nav-btn-3d">Contact</a>
+            </nav>
+        </header>
+
+        <main class="hero-content">
+            <div class="hero-text-side">
+                <p class="sub-title">Welcome to My Digital Space</p>
+                <h1>Writing about <span>life, technology</span> & small ideas.</h1>
+                <p class="description">
+                    Hi, I'm Siti Zulaiha. This is my mini journal and digital portfolio where I share my passions, learning notes, and the aesthetic things I discover every day.
+                </p>
+                <div class="cta-buttons">
+                    <a href="blog.html" class="btn-3d-primary">Read Blog</a>
+                    <a href="about.html" class="btn-3d-secondary">Get to Know Me</a>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-title">
+                <span class="story-watermark">01</span>
+                <p class="story-subtitle-tag">The Beginning</p>
+                <h2>My story</h2>
+            </div>
+            <div class="story-text">
+                <p class="story-p-newroman">
+                    I am a passionate technology student with a strong interest in digital design, web development, and multimedia creativity. I enjoy combining technical expertise with creative thinking to build digital experiences that are both functional and visually engaging. This portfolio showcases my projects, skills, and achievements, reflecting my continuous journey of learning, innovation, and professional growth.
+                </p>
+                <blockquote class="story-quote">
+                    "Creating with creativity, developing with precision, and delivering meaningful digital experiences."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="services-banner"></div>
+
+    <section class="services-section">
+        <div class="services-grid">
+            
+            <div class="services-left">
+                <span class="services-watermark">02</span>
+                <p class="services-tag">My Expertise</p>
+                <h2>What I can do for you</h2>
+                <div class="cta-bottom">
+                    <a href="contact.html" class="btn-3d-primary">Get in touch</a>
+                </div>
+            </div>
+            
+            <div class="services-right">
+                
+                <div class="service-card">
+                    <span class="service-num">01</span>
+                    <div class="service-card-content">
+                        <h3>Graphic Design & Branding</h3>
+                        <p>Creating visual designs that communicate ideas clearly and leave a lasting impression.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num">02</span>
+                    <div class="service-card-content">
+                        <h3>UI/UX Design & Web Development</h3>
+                        <p>Building user-friendly and responsive digital experiences that combine functionality with aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num">03</span>
+                    <div class="service-card-content">
+                        <h3>Multimedia Content Creation</h3>
+                        <p>Producing engaging graphics, videos, animations, 3D models and interactive media for various platforms.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num">04</span>
+                    <div class="service-card-content">
+                        <h3>Application Development</h3>
+                        <p>Transforming ideas into practical and efficient digital solutions through modern technologies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Siti Zulaiha. Built for CSD34203 Project.</p>
+    </footer>
+
+    <!-- ======================================================== -->
+    <!-- JAVASCRIPT AUDIO ENGINE: SUPER IMMUNE VERSION            -->
+    <!-- ======================================================== -->
+    <script>
+        // 1. Menggunakan encodeURIComponent untuk mengatasi masalah jarak pada nama fail 'Click Button.mp3'
+        const audioPath = encodeURI('click.mp3');
+        const clickAudio = new Audio('click.mp3');
+        
+        // Paksa browser untuk memuat naik audio siap-siap ke dalam memori laptop
+        clickAudio.preload = 'auto';
+        clickAudio.load();
+
+        // 2. Sasaran butang utama Siti (Kad 01-04 dikecualikan secara automatik)
+        const targetSelectors = '.btn-3d-primary, .btn-3d-secondary, .nav-btn-3d';
+        const buttons = document.querySelectorAll(targetSelectors);
+
+        // 3. Fungsi utama mainkan bunyi apabila butang berasaskan kelas di-klik
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Mainkan bunyi tanpa gangguan delay
+                clickAudio.currentTime = 0; 
+                let playPromise = clickAudio.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log("Audio disekat! Sila klik latar belakang kosong dahulu.");
+                    });
+                }
+            });
+        });
+
+        // 4. BACKUP KESELAMATAN: Mengesan klik berdasarkan teks huruf besar/kecil
+        document.addEventListener('click', (e) => {
+            const element = e.target;
+            
+            if (element.tagName === 'A') {
+                const text = element.innerText.trim().toLowerCase();
+                const allowedTexts = ['home', 'about', 'blog', 'contact', 'read blog', 'get to know me', 'get in touch'];
+                
+                if (allowedTexts.includes(text)) {
+                    clickAudio.currentTime = 0;
+                    clickAudio.play().catch(() => {});
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
