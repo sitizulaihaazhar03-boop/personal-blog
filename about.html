@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Siti Zulaiha</title>
+
+    <link rel="icon" type="image/png" href="Logo Blog.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Memanggil Google Font 'Bebas Neue' & Montserrat -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-    <!-- ======================================================== -->
-    <!-- CSS CORRECTION FOR REAL POP-OUT 3D EFFECT                -->
-    <!-- ======================================================== -->
+    
     <style>
-        /* Mengaktifkan ruang 3D pada kontainer utama Vision & Mission */
+        
         .new-vision-mission-section {
             perspective: 1500px;
         }
 
-        /* Keadaan Asal 4 Kad Frame (1 Vision + 3 Mission) */
+        
         .vision-frame, .mission-frame-card {
             background-color: #ffffff; 
             border: 1px solid #cbb8aa; 
             border-radius: 16px;
-            box-shadow: 0 6px 12px rgba(44, 37, 32, 0.08); /* Bayang standard */
+            box-shadow: 0 6px 12px rgba(44, 37, 32, 0.08); 
             
             /* Transisi super smooth untuk kesan anjalan 3D */
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
@@ -35,30 +36,24 @@
             transform-style: preserve-3d;
         }
 
-        /* ======================================================== */
-        /* KESAN APBILA MOUSE TERKENA KAD (MELONCAT KELUAR 3D)       */
-        /* ======================================================== */
+        
         .vision-frame:hover, .mission-frame-card:hover {
-            /* 
-               rotateX(8deg) = Condongkan frame sedikit ke depan
-               translateY(-15px) = Angkat frame tinggi ke atas
-               translateZ(30px) = Tolak frame "keluar" dari skrin menghampiri mata 
-            */
+           
             transform: rotateX(8deg) translateY(-15px) translateZ(30px);
             
-            background-color: #2c2520 !important; /* Bertukar jadi Dark Brown */
+            background-color: #2c2520 !important; 
             border-color: #4a3f37 !important;
             
-            /* Bayang menjadi sangat tebal, besar & jatuh jauh ke bawah (Kesan Terapung Tinggi) */
+            
             box-shadow: 0 25px 40px rgba(22, 18, 15, 0.45) !important; 
         }
 
-        /* Perubahan Warna Teks Vision apabila Hover (Bagi nampak jelas) */
+        
         .vision-frame:hover p {
             color: #f5efe9 !important;
         }
 
-        /* Perubahan Warna Teks Mission apabila Hover */
+        
         .mission-frame-card:hover h4 {
             color: #ebdcd0 !important;
             border-bottom-color: #4a3f37 !important;
@@ -107,7 +102,7 @@
                         <img src="me.png" alt="Siti Zulaiha" class="siti-portrait-img">
                     </div>
 
-                    <!-- NAMA PENUH DENGAN FONT BEBAS NEUE & WARNA KHAKI -->
+                    
                     <div class="poster-bottom-left-tag" style="font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; font-weight: normal; letter-spacing: 2px; color: #8C7662; text-transform: uppercase; line-height: 1.0; position: absolute; bottom: 3.5rem; left: 3.5rem; text-align: left;">
                         SITI<br>
                         ZULAIHA<br>
@@ -115,7 +110,7 @@
                     </div>
                 </div>
                 
-                <!-- LAJUR KANAN: BLOK TEKS BIOGRAFI -->
+               
                 <div class="poster-right-column">
                     <div class="biography-text-wrapper" style="display: flex; flex-direction: column; padding-top: 13rem;">
                         
@@ -134,70 +129,68 @@
 
         </main>
 
-        <!-- ======================================================== -->
-        <!-- SEKSYEN PENUH: VISION & MISSION (3D LOOKS & DARK BROWN HOVER) -->
-        <!-- ======================================================== -->
+        
         <section class="vision-mission-section" style="padding: 80px 0; background-color: #E6D7CE;">
             <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 
-                <!-- STYLE DALAMAN KHAS UNTUK KESAN 3D & HOVER DARK BROWN -->
+               
                 <style>
                     .frame-3d-looks {
                         background: #ffffff;
                         border-radius: 16px;
-                        border: 2px solid #2c2520; /* Garisan luar solid yang tegap */
+                        border: 2px solid #2c2520; 
                         cursor: pointer;
                         position: relative;
                         
-                        /* Blok 3D tebal berwarna coklat di bawah kad */
+                       
                         box-shadow: 8px 8px 0px 0px #8C7662; 
                         
-                        /* Transisi lancar untuk pergerakan, warna background, dan border */
+                        
                         transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
                                     box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                                     background-color 0.25s ease,
                                     border-color 0.25s ease;
                     }
 
-                    /* Transisi warna teks di dalam kad secara berasingan */
+                    
                     .frame-3d-looks h3, 
                     .frame-3d-looks p,
                     .frame-3d-looks div {
                         transition: color 0.2s ease, background-color 0.2s ease;
                     }
 
-                    /* TINDAK BALAS APABILA HOVER (TEKAN KE BAWAH + COKLAT GELAP) */
+                    
                     .frame-3d-looks:hover {
-                        transform: translate(4px, 4px); /* Efek 3D tertekan */
-                        box-shadow: 4px 4px 0px 0px #8C7662; /* Blok 3D mengecil */
-                        background-color: #2c2520; /* Latar belakang bertukar Dark Brown */
+                        transform: translate(4px, 4px); 
+                        box-shadow: 4px 4px 0px 0px #8C7662; 
+                        background-color: #2c2520; 
                         border-color: #2c2520;
                     }
 
-                    /* Mengubah warna elemen teks di dalam apabila kad di-hover */
+                    
                     .frame-3d-looks:hover h3 {
                         color: #ffffff !important;
                     }
                     .frame-3d-looks:hover p {
-                        color: #e1d4ca !important; /* Warna putih gading lembut supaya sedap dibaca */
+                        color: #e1d4ca !important; 
                     }
-                    /* Garisan pemisah bertukar menjadi putih pudar apabila di-hover */
+                    
                     .frame-3d-looks:hover .divider-line {
                         background-color: rgba(255, 255, 255, 0.2) !important;
                     }
                     
-                    /* Tindak balas maksima bila mouse klik (Active State) */
+                    
                     .frame-3d-looks:active {
                         transform: translate(8px, 8px); 
                         box-shadow: 0px 0px 0px 0px #8C7662; 
                     }
                 </style>
 
-                <!-- ==================== OUR VISION ==================== -->
+                
                 <div style="text-align: center; margin-bottom: 4.5rem;">
                     <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: #2c2520; margin-bottom: 2rem; letter-spacing: 1px;">OUR VISION</h2>
                     
-                    <!-- FRAME VISION 3D -->
+                   
                     <div class="frame-3d-looks" style="max-width: 850px; margin: 0 auto; padding: 2.5rem 3rem;">
                         <p style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: #443b33; line-height: 1.8; font-style: italic; margin: 0; text-align: center;">
                             "To become a versatile developer and a specialist in the multimedia field, mastering the convergence of AR (Augmented Reality) and VR (Virtual Reality) to build immersive, high-impact digital experiences that bridge the gap between technology and human creativity."
@@ -205,14 +198,14 @@
                     </div>
                 </div>
 
-                <!-- ==================== OUR MISSION ==================== -->
+                
                 <div style="text-align: center; margin-top: 5rem;">
                     <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: #2c2520; margin-bottom: 2rem; letter-spacing: 1px;">OUR MISSION</h2>
                     
-                    <!-- GRID 3 KAD MISSION -->
+                    
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; margin-top: 1rem;">
                         
-                        <!-- MISSION 1 -->
+                        
                         <div class="frame-3d-looks" style="padding: 2.5rem 2rem; text-align: left; display: flex; flex-direction: column;">
                             <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.1rem; color: #2c2520; margin-top: 0; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">
                                 Continuous Skill Evolution
@@ -223,7 +216,7 @@
                             </p>
                         </div>
 
-                        <!-- MISSION 2 -->
+                        
                         <div class="frame-3d-looks" style="padding: 2.5rem 2rem; text-align: left; display: flex; flex-direction: column;">
                             <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.1rem; color: #2c2520; margin-top: 0; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">
                                 Collaborative Growth
@@ -234,7 +227,7 @@
                             </p>
                         </div>
 
-                        <!-- MISSION 3 -->
+                        
                         <div class="frame-3d-looks" style="padding: 2.5rem 2rem; text-align: left; display: flex; flex-direction: column;">
                             <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.1rem; color: #2c2520; margin-top: 0; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">
                                 Creative Excellence
@@ -251,37 +244,34 @@
             </div>
         </section>
 
-        <!-- ======================================================== -->
-        <!-- SUSUNAN 3: THE VALUE I BRING (FRAMES ON DESCRIPTION ONLY) -->
-        <!-- ======================================================== -->
+        
         <section class="just-value-section" style="padding: 80px 0; background: transparent; margin-bottom: 20px;">
             <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 60px;">
                 
-                <!-- UTAMA: HEADER SEKSYEN -->
+                
                 <div style="width: 100%;">
                     <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: #2c2520; margin-bottom: 1rem; border-bottom: 2px solid #8C7662; padding-bottom: 10px;">The Value I Bring</h2>
                 </div>
 
-                <!-- ITEM 01: AR/VR & SOFTWARE DEVELOPMENT -->
+                
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 60px; margin-top: 10px;">
                     
-                    <!-- LAJUR KIRI: TIPOGRAFI BEBAS (TANPA FRAME) -->
+                    
                     <div style="position: relative; min-width: 320px; padding-top: 20px;">
-                        <!-- Nombor Gergasi Pudar -->
+                    
                         <span style="position: absolute; top: -45px; left: -5px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8rem; color: rgba(44, 37, 32, 0.05); line-height: 1; user-select: none; z-index: 1;">01</span>
                         
-                        <!-- Sub-tag Atas Tajuk -->
+                        
                         <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem; color: #8C7662; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 5px; position: relative; z-index: 2;">
                             Core Expertise
                         </span>
                         
-                        <!-- Tajuk Utama Bergaris -->
+                        
                         <h3 style="font-family: 'Georgia', 'Times New Roman', serif; font-weight: normal; font-style: italic; font-size: 2.5rem; color: #2c2520; margin: 0; line-height: 1.2; position: relative; z-index: 2; padding-bottom: 15px; border-bottom: 1px solid #8C7662; display: inline-block; width: 100%;">
                             AR/VR & Software
                         </h3>
                     </div>
 
-                    <!-- LAJUR KANAN: HANYA PARAGRAF DI DALAM FRAME (Rujuk imej teks image_eef849.png) -->
                     <div style="flex-grow: 1; max-width: 700px; background-color: #ffffff; border: 1px solid #cbb8aa; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(44, 37, 32, 0.04);">
                         <p style="font-family: 'Georgia', 'Times New Roman', serif; font-size: 1.15rem; color: #443b33; line-height: 1.8; margin: 0; text-align: justify;">
                             I integrate technical proficiency in software development with immersive technologies to create innovative user experiences. By fusing clean architecture with interactive components, digital landscapes become more than code—they become environments.
@@ -289,26 +279,25 @@
                     </div>
                 </div>
 
-                <!-- ITEM 02: GRAPHIC DESIGN & ANIMATION -->
+                
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 60px;">
                     
-                    <!-- LAJUR KIRI: TIPOGRAFI BEBAS (TANPA FRAME) -->
+
                     <div style="position: relative; min-width: 320px; padding-top: 20px;">
-                        <!-- Nombor Gergasi Pudar -->
+               
                         <span style="position: absolute; top: -45px; left: -5px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8rem; color: rgba(44, 37, 32, 0.05); line-height: 1; user-select: none; z-index: 1;">02</span>
                         
-                        <!-- Sub-tag Atas Tajuk -->
+         
                         <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem; color: #8C7662; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 5px; position: relative; z-index: 2;">
                             Creative Vision
                         </span>
-                        
-                        <!-- Tajuk Utama Bergaris -->
+                 
                         <h3 style="font-family: 'Georgia', 'Times New Roman', serif; font-weight: normal; font-style: italic; font-size: 2.5rem; color: #2c2520; margin: 0; line-height: 1.2; position: relative; z-index: 2; padding-bottom: 15px; border-bottom: 1px solid #8C7662; display: inline-block; width: 100%;">
                             Design & Animation
                         </h3>
                     </div>
 
-                    <!-- LAJUR KANAN: HANYA PARAGRAF DI DALAM FRAME (Rujuk imej teks image_eef849.png) -->
+           
                     <div style="flex-grow: 1; max-width: 700px; background-color: #ffffff; border: 1px solid #cbb8aa; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(44, 37, 32, 0.04);">
                         <p style="font-family: 'Georgia', 'Times New Roman', serif; font-size: 1.15rem; color: #443b33; line-height: 1.8; margin: 0; text-align: justify;">
                             I bring a premium aesthetic to my work in graphic design and animation, ensuring that every visual is not only attractive but also possesses meaningful depth and movement. This asset transformation establishes an emotional connection with the user.
@@ -319,13 +308,10 @@
             </div>
         </section>
 
-       <!-- ======================================================== -->
-        <!-- SUSUNAN 4: MY INTERESTS & HOBBIES (DARK BROWN HOVER)    -->
-        <!-- ======================================================== -->
         <section class="interests-section" style="padding: 80px 0; background: transparent;">
             <div class="interests-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 
-                <!-- HEADER SEKSYEN -->
+             
                 <div class="interests-header" style="position: relative; margin-bottom: 3.5rem; text-align: left; padding-left: 10px;">
                     <span class="interests-watermark" style="font-family: 'Georgia', 'Times New Roman', serif; font-weight: bold; font-size: 7rem; color: rgba(44, 37, 32, 0.03); position: absolute; top: -50px; left: 10px; letter-spacing: 4px; user-select: none; z-index: 1;">HOBBIES</span>
                     
@@ -338,7 +324,7 @@
                     </h2>
                 </div>
                 
-                <!-- STYLE DALAMAN KHAS UNTUK HOVER COKLAT GELAP -->
+          
                 <style>
                     .hobby-interactive-card {
                         background: #ffffff; 
@@ -350,36 +336,34 @@
                         flex-direction: column;
                         cursor: pointer;
                         
-                        /* Transisi lancar untuk perubahan warna background & teks */
+      
                         transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
                                     background-color 0.4s ease,
                                     box-shadow 0.4s ease, 
                                     border-color 0.4s ease;
                     }
 
-                    /* Transisi berasingan untuk teks di dalam kad */
                     .hobby-interactive-card h3, 
                     .hobby-interactive-card p {
                         transition: color 0.3s ease;
                     }
 
-                    /* TINDAK BALAS APABILA HOVER (BERTUKAR COKLAT GELAP) */
                     .hobby-interactive-card:hover {
-                        background-color: #2c2520; /* Latar belakang bertukar Dark Brown */
+                        background-color: #2c2520; 
                         border-color: #2c2520;
                         transform: translateY(-10px); 
                         box-shadow: 0 20px 35px rgba(44, 37, 32, 0.25); 
                     }
 
-                    /* Menukarkan warna teks menjadi putih apabila kad di-hover */
+                
                     .hobby-interactive-card:hover h3 {
                         color: #ffffff !important;
                     }
                     .hobby-interactive-card:hover p {
-                        color: #e1d4ca !important; /* Warna putih gading lembut supaya mata tenang membaca */
+                        color: #e1d4ca !important; 
                     }
 
-                    /* Kesan gambar membesar sedikit */
+                 
                     .hobby-img-wrapper img {
                         transition: transform 0.5s ease;
                     }
@@ -388,10 +372,9 @@
                     }
                 </style>
 
-                <!-- GRID KAD HOBI -->
                 <div class="interests-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                     
-                    <!-- KAD 1 -->
+          
                     <div class="hobby-interactive-card">
                         <div class="hobby-img-wrapper" style="width: 100%; height: 210px; overflow: hidden; border-radius: 12px; background-color: #f5efe9;">
                             <img src="Multimedia%20&%20Creative%20Exploration.jpg" alt="Multimedia & Creative Exploration" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -402,7 +385,7 @@
                         </div>
                     </div>
                     
-                    <!-- KAD 2 -->
+       
                     <div class="hobby-interactive-card">
                         <div class="hobby-img-wrapper" style="width: 100%; height: 210px; overflow: hidden; border-radius: 12px; background-color: #f5efe9;">
                             <img src="Photography%20&%20Nature.png" alt="Photography & Nature" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -413,7 +396,7 @@
                         </div>
                     </div>
                     
-                    <!-- KAD 3 -->
+        
                     <div class="hobby-interactive-card">
                         <div class="hobby-img-wrapper" style="width: 100%; height: 210px; overflow: hidden; border-radius: 12px; background-color: #f5efe9;">
                             <img src="Cat%20Lover.jpg" alt="Cat Lover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -428,10 +411,15 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>&copy; 2026 Siti Zulaiha. Faculty of Informatics and Computing (UniSZA). All Rights Reserved.</p>
-        </footer>
+        <footer style="width: 100%; text-align: center; padding: 30px 20px; margin-top: 5rem; box-sizing: border-box; background: transparent;">
+    
+    <div style="width: 100%; max-width: 1200px; height: 1px; background-color: rgba(44, 37, 32, 0.1); margin: 0 auto 20px auto;"></div>
+
+    <p style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: #2c2520; font-weight: 500; margin: 0; letter-spacing: 0.5px; line-height: 1.5;">
+        &copy; PORTFOLIO 2026 Siti Zulaiha. Faculty of Informatics and Computing (UniSZA). All Rights Reserved.
+    </p>
+
+</footer>
 
     </div>
 
