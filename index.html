@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siti Zulaiha | Personal Blog</title>
+
+    <link rel="icon" type="image/png" href="Logo Blog.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,29 +115,27 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Siti Zulaiha. Built for CSD34203 Project.</p>
+        <p>&copy; PORTFOLIO 2026 Siti Zulaiha. Faculty of Informatics and Computing (UniSZA). All Rights Reserved.</p>
     </footer>
 
-    <!-- ======================================================== -->
-    <!-- JAVASCRIPT AUDIO ENGINE: SUPER IMMUNE VERSION            -->
-    <!-- ======================================================== -->
+   
     <script>
-        // 1. Menggunakan encodeURIComponent untuk mengatasi masalah jarak pada nama fail 'Click Button.mp3'
+   
         const audioPath = encodeURI('click.mp3');
         const clickAudio = new Audio('click.mp3');
         
-        // Paksa browser untuk memuat naik audio siap-siap ke dalam memori laptop
+       
         clickAudio.preload = 'auto';
         clickAudio.load();
 
-        // 2. Sasaran butang utama Siti (Kad 01-04 dikecualikan secara automatik)
+        
         const targetSelectors = '.btn-3d-primary, .btn-3d-secondary, .nav-btn-3d';
         const buttons = document.querySelectorAll(targetSelectors);
 
-        // 3. Fungsi utama mainkan bunyi apabila butang berasaskan kelas di-klik
+        
         buttons.forEach(button => {
             button.addEventListener('click', (e) => {
-                // Mainkan bunyi tanpa gangguan delay
+              
                 clickAudio.currentTime = 0; 
                 let playPromise = clickAudio.play();
                 
@@ -146,7 +147,7 @@
             });
         });
 
-        // 4. BACKUP KESELAMATAN: Mengesan klik berdasarkan teks huruf besar/kecil
+       
         document.addEventListener('click', (e) => {
             const element = e.target;
             
