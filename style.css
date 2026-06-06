@@ -32,7 +32,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)), url('Wallpaper HomePage.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)), url('Wallpaper HomePage.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -349,7 +349,7 @@ header {
 .services-banner {
     width: 100%;
     height: 480px; 
-    background-image: url('Image HomePage.jpeg');
+    background-image: url('Image HomePage.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
