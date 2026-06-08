@@ -3201,3 +3201,202 @@ footer {
         margin: 0 auto !important;
     }
 }
+
+/* ======================================================== */
+/* SMARTPHONE RESPONSIVE: CONTACT.HTML (FIX MENU & LAYOUT)  */
+/* ======================================================== */
+@media (max-width: 768px) {
+    /* 1. PAKSA MENU NAVIGASI DUK ATAS & MELINTANG KEMAS */
+    header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 10px 0 !important;
+        background: rgba(230, 221, 206, 0.98) !important; /* Latar belakang beige lembut */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+        z-index: 9999 !important;
+    }
+
+    .logo-container {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    header img { 
+        height: 35px !important; 
+    }
+
+    nav, .glass-nav-container {
+        display: flex !important;
+        flex-direction: row !important; /* Kekal sebaris melintang, tak pecah bawah */
+        justify-content: center !important;
+        align-items: center !important;
+        width: 90% !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+        padding: 4px !important;
+        gap: 2px !important;
+        background: rgba(44, 37, 32, 0.1) !important;
+        border-radius: 50px !important;
+    }
+
+    nav a, .nav-btn-3d {
+        flex: 1 !important;
+        font-size: 0.75rem !important; /* Tulisan comel agar muat screen phone */
+        padding: 6px 0 !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    /* 2. TOLAK KANDUNGAN UTAMA KE BAWAH AGAR TIDAK LINDUNG */
+    body, main, .contact-hero, .hero-content {
+        padding-top: 13rem !important; /* Jarak selamat daripada navbar fixed */
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 3. ADJUST SAIZ TEKS UTAMA PADA PHONE */
+    .hero-text-side {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-title {
+        font-size: 2rem !important; /* Kecilkan saiz tajuk sikit supaya muat skrin phone */
+        line-height: 1.3 !important;
+    }
+
+    .sub-title {
+        font-size: 0.85rem !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .description {
+        font-size: 0.92rem !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 4. FIX KAN BAHAGIAN BUTTON / PAUTAN MEDIA SOSIAL (DI BAWAH) */
+    .social-links-container, .contact-buttons, .links-wrapper {
+        display: flex !important;
+        flex-direction: column !important; /* Tukar butang media sosial ke bawah satu-satu */
+        gap: 12px !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 30px auto 0 auto !important;
+    }
+
+    .social-btn, .contact-link {
+        width: 100% !important; /* Butang memanjang penuh skrin phone */
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 10px 0 !important;
+        background: rgba(230, 221, 206, 0.98) !important; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+        z-index: 9999 !important;
+    }
+
+    .logo-container {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    header img { 
+        height: 35px !important; 
+    }
+
+    nav, .glass-nav-container {
+        display: flex !important;
+        flex-direction: row !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        width: 90% !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+        padding: 4px !important;
+        gap: 2px !important;
+        background: rgba(44, 37, 32, 0.1) !important;
+        border-radius: 50px !important;
+    }
+
+    nav a, .nav-btn-3d {
+        flex: 1 !important;
+        font-size: 0.75rem !important; 
+        padding: 6px 0 !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    body, main, .contact-hero, .hero-content {
+        padding-top: 13rem !important; 
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+
+    .hero-text-side {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-title {
+        font-size: 2rem !important; 
+        line-height: 1.3 !important;
+    }
+
+    .sub-title {
+        font-size: 0.85rem !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .description {
+        font-size: 0.92rem !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .social-links-container, .contact-buttons, .links-wrapper {
+        display: flex !important;
+        flex-direction: column !important; 
+        gap: 12px !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 30px auto 0 auto !important;
+    }
+
+    .social-btn, .contact-link {
+        width: 100% !important; 
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
