@@ -37,7 +37,7 @@ JavaScript: Implementation of interactivity, including modal popups and smooth n
 (Sila muat naik screenshot laman web anda di sini. Contoh: jika fail gambar dalam folder 'assets', gunakan: ![Home Page](assets/home-page.jpg))
 
 # How to Run the Project
-Clone the repository: git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+Clone the repository: git clone [https://github.com/sitizulaihaazhar03-boop/personal-blog](https://github.com/sitizulaihaazhar03-boop/personal-blog)
 Open locally: Open the index.html file in your preferred web browser.
 No installation required: This is a static website and can be viewed directly after cloning.
 
