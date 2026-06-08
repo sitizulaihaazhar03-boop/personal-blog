@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - The Creative Lab</title>
 
-    <link rel="icon" type="image/png" href="Logo Blog.PNG">
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
     
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Georgia&display=swap" rel="stylesheet">
     
@@ -17,7 +17,7 @@
             padding: 0;
         }
         body {
-            background-color: #E6D7CE; 
+            background-color: #E6D7CE; /* Latar Belakang Beige Lembut */
             font-family: 'Montserrat', sans-serif;
             color: #2c2520;
             overflow-x: hidden;
@@ -167,7 +167,7 @@
             padding: 0 20px;
         }
 
-    
+        /* BANNER HEADLINE UTAMA (ATAS) */
         .blog-hero {
             padding: 80px 0 30px 0;
             text-align: left;
@@ -968,7 +968,7 @@
   
     <header>
             <div class="logo-container">
-                <img src="Logo Blog.PNG" alt="Ct Logo" class="blog-logo">
+                <img src="Logo.jpg" alt="Ct Logo" class="logo">
             </div>
             <nav class="glass-nav-container">
                 <a href="index.html" class="nav-btn-3d">Home</a>
@@ -1026,7 +1026,7 @@
                         <a href="https://www.autodesk.com/products/maya/free-trial" target="_blank" class="logo-3d-item"><img src="Maya.jpg" alt="Maya"><span>Maya</span></a>
                         <a href="https://www.blender.org/download/releases/5-0/" target="_blank" class="logo-3d-item"><img src="Blender.png" alt="Blender"><span>Blender</span></a>
                         <a href="https://unity.com/products/unity-personal" target="_blank" class="logo-3d-item"><img src="Unity.png" alt="Unity"><span>Unity</span></a>
-                        <a href="https://desktop.github.com/download/" target="_blank" class="logo-3d-item"><img src="Github.png" alt="GitHub"><span>GitHub</span></a>
+                        <a href="https://desktop.github.com/download/" target="_blank" class="logo-3d-item"><img src="GitHub.jpeg" alt="GitHub"><span>GitHub</span></a>
                         <a href="https://www.java.com/en/download/manual.jsp" target="_blank" class="logo-3d-item"><img src="JavaScript.png" alt="JavaScript"><span>JavaScript</span></a>
                         <a href="https://www.apachefriends.org/download.html" target="_blank" class="logo-3d-item"><img src="Xampp.png" alt="XAMPP"><span>XAMPP</span></a>
                         <a href="https://notepad-plus-plus.org/downloads/" target="_blank" class="logo-3d-item"><img src="Notepad.png" alt="Notepad++"><span>Notepad++</span></a>
@@ -1616,24 +1616,1054 @@
             });
         });
     </script>
-    <main class="hero-content" style="padding-top: 14rem; padding-bottom: 6rem; text-align: center; position: relative; z-index: 10;">
-    <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+    <!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Creative Lab</title>
+
+    <link rel="icon" type="image/png" href="logo-blog.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Georgia&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E6D7CE; /* Latar Belakang Beige Lembut */
+            font-family: 'Montserrat', sans-serif;
+            color: #2c2520;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            width: 100%;
+            position: fixed;            
+            top: 0;
+            left: 0;
+            z-index: 1000;              
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Pembetulan Class Logo supaya saiz mengecil dengan betul */
+        .blog-logo {
+            height: 50px;              
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3)); 
+        }
+
+        .glass-nav-container {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.12); 
+            padding: 0.5rem;
+            border-radius: 100px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-btn-3d {
+            text-decoration: none;
+            color: #FFFFFF; 
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.7rem 1.6rem;
+            border-radius: 100px;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            background-color: transparent;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+
+        .nav-btn-3d.active {
+            color: #FDFBF9 !important;          
+            background-color: #3D3332;          
+            text-shadow: none;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 4px 0px #241E1D, 
+                        0px 6px 15px rgba(61, 51, 50, 0.4); 
+        }
+
+        .nav-btn-3d:hover {
+            color: #FFFFFF !important;
+            background-color: var(--accent-color); 
+            text-shadow: none;
+            transform: translateY(-3px) scale(1.08); 
+            box-shadow: 0px 8px 20px rgba(186, 155, 138, 0.4), 
+                        0px 4px 0px var(--accent-shadow); 
+        }
+
+        .nav-btn-3d.active:hover {
+            background-color: #524544; 
+            transform: translateY(-3px) scale(1.08); 
+            box-shadow: 0px 8px 20px rgba(61, 51, 50, 0.35), 
+                        0px 4px 0px #241E1D;
+        }
+
+        .nav-btn-3d:active, .nav-btn-3d.active:active {
+            transform: translateY(4px) scale(0.92) !important;
+            box-shadow: 0px 0px 0px transparent !important;
+            transition: all 0.05s ease !important; 
+        }
+
+        .nav-container {
+            background: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 8px 10px;
+            border-radius: 50px;
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            box-shadow: 0 8px 32px 0 rgba(44, 37, 32, 0.05);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c2520;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 10px 24px;
+            border-radius: 50px;
+            transition: all 0.25s ease;
+        }
+
+        .nav-links a:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .nav-links a.active {
+            background: #2c2520;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(44, 37, 32, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 4%;
+            }
+            .nav-container {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ======================================================== */
+        /* DESIGN PERFECT UNTUK HERO SECTION "MY BLOG" & BUTTON 3D  */
+        /* ======================================================== */
+        .perfect-blog-hero {
+            position: relative;
+            padding: 14rem 0 5rem 0; /* Memberi ruang luas dari fixed navbar */
+            text-align: center;
+        }
+
+        .blog-hero-watermark {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 13rem;
+            color: rgba(44, 37, 32, 0.04); /* Halus sebagai latar belakang */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            letter-spacing: 10px;
+            white-space: nowrap;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .perfect-blog-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 5.5rem;
+            letter-spacing: 5px;
+            color: #2c2520;
+            margin-bottom: 1.2rem;
+            position: relative;
+            z-index: 2;
+            line-height: 1;
+        }
+
+        .perfect-blog-title span {
+            color: #8C7662; /* Penyelarasan kod warna portfolio anda */
+            position: relative;
+            display: inline-block;
+        }
+
+        .perfect-blog-title span::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 5%;
+            width: 90%;
+            height: 6px;
+            background-color: #2c2520;
+            border-radius: 3px;
+        }
+
+        .perfect-blog-desc {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #443b33;
+            max-width: 680px;
+            margin: 0 auto 2.8rem auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* BUTANG 3D PREMIUM NEO-BRUTALISM */
+        .btn-perfect-3d {
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: #ffffff;
+            background-color: #8C7662; 
+            border: 3px solid #2c2520;
+            border-radius: 12px;
+            padding: 1.1rem 3rem;
+            position: relative;
+            z-index: 3;
+            box-shadow: 0px 8px 0px 0px #2c2520; /* Bayang padat kemas */
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+        }
+
+        .btn-perfect-3d:hover {
+            background-color: #a48b75; 
+            transform: translateY(2px); /* Turun sedikit menghampiri lantai bayang */
+            box-shadow: 0px 6px 0px 0px #2c2520;
+        }
+
+        .btn-perfect-3d:active {
+            transform: translateY(8px); /* Tenggelam rapat ke lantai apabila ditekan */
+            box-shadow: 0px 0px 0px 0px #2c2520;
+        }
+
+        @media (max-width: 768px) {
+            .perfect-blog-hero { padding: 12rem 0 4rem 0; }
+            .perfect-blog-title { font-size: 3.8rem; }
+            .blog-hero-watermark { font-size: 6.5rem; }
+            .perfect-blog-desc { font-size: 0.95rem; padding: 0 15px; }
+            .btn-perfect-3d { padding: 0.8rem 2.2rem; font-size: 0.9rem; }
+        }
+
+        /* CORE PORTFOLIO & ECOSYSTEM DESIGN */
+        .card-3d-looks {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 2px solid #2c2520;
+            padding: 2rem;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 8px 8px 0px 0px #8C7662;
+            transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                        box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        background-color 0.25s ease,
+                        border-color 0.25s ease;
+        }
+
+        .card-3d-looks:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0px 0px #8C7662;
+            background-color: #2c2520;
+            border-color: #2c2520;
+        }
         
-        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 5rem; letter-spacing: 4px; color: #F5F0E6; margin-bottom: 1.5rem; text-shadow: 3px 3px 0px rgba(0,0,0,0.4);">
-            MY <span style="color: #947f5c;">BLOG</span>
-        </h1>
+        .card-3d-looks:active {
+            transform: translate(8px, 8px);
+            box-shadow: 0px 0px 0px 0px #8C7662;
+        }
+
+        .card-3d-looks h3, 
+        .card-3d-looks p,
+        .card-3d-looks strong,
+        .card-3d-looks .divider,
+        .card-3d-looks span,
+        .card-3d-looks small {
+            transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+        }
         
-        <p style="font-family: 'Montserrat', sans-serif; color: #E6D7CE; font-size: 1.1rem; max-width: 600px; margin: 0 auto 2.5rem auto; line-height: 1.6; opacity: 0.9;">
-            Welcome to my creative space. Explore my thoughts, latest design projects, and journey in software development.
-        </p>
+        .card-3d-looks:hover h3, 
+        .card-3d-looks:hover strong,
+        .card-3d-looks:hover span {
+            color: #ffffff !important;
+        }
+        .card-3d-looks:hover p {
+            color: #e1d4ca !important;
+        }
+        .card-3d-looks:hover small {
+            color: #bfaea2 !important;
+        }
+        .card-3d-looks:hover .divider {
+            background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+
+        .btn-download-apk {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 28px;
+            background-color: #8C7662;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 2px solid #2c2520;
+            border-radius: 8px;
+            box-shadow: 4px 4px 0px 0px #2c2520;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .btn-download-apk:hover {
+            background-color: #a48b75;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #2c2520;
+        }
+
+        .btn-download-apk:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px #2c2520;
+        }
+
+        .card-3d-looks:hover .btn-download-apk {
+            color: #ffffff !important;
+        }
+
+        .toolkit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-vertical-container {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .portfolio-vertical-container .card-3d-looks {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .portfolio-vertical-container .card-3d-looks .divider {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .modelling-gallery-outside, 
+        .animation-gallery-outside {
+            display: grid;
+            gap: 20px;
+            width: 100%;
+            padding: 20px 40px;
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+
+        .modelling-gallery-outside {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .animation-gallery-outside {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .web-gallery-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .web-grid-row-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .web-grid-row-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            width: 100%;
+            max-width: 960px; 
+            margin: 0 auto;
+        }
+
+        .web-phone-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9 / 18.5;
+            background: #2c2520;
+            border: 4px solid #8C7662;
+            border-radius: 24px;
+            padding: 8px;
+            box-shadow: 5px 8px 0px 0px #2c2520;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .web-phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #1a1512;
+        }
+
+        .web-phone-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .web-phone-frame:hover {
+            transform: scale(1.07) translateY(-8px);
+            box-shadow: 10px 15px 0px 0px #8C7662;
+            z-index: 10;
+        }
+
+        .web-laptop-frame {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), z-index 0s;
+        }
+
+        .laptop-screen {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background: #2c2520;
+            border: 6px solid #2c2520;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .laptop-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .laptop-base {
+            width: 116%; 
+            height: 8px;
+            background: #8C7662;
+            border: 2px solid #2c2520;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            position: relative;
+            box-shadow: 4px 6px 0px 0px #2c2520;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .laptop-base::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25px;
+            height: 3px;
+            background: #2c2520;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .web-laptop-frame:hover {
+            transform: scale(1.08) translateY(-8px);
+            z-index: 10;
+        }
         
-        <div style="display: inline-block;">
-            <a href="#blog-section" class="btn-blog-3d">
-                CLICK HERE
-            </a>
+        .web-laptop-frame:hover .laptop-base {
+            box-shadow: 6px 12px 0px 0px #8C7662;
+            background: #a48b75;
+        }
+
+        @media (max-width: 1024px) {
+            .web-grid-row-5, .web-grid-row-4 {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 100%;
+            }
+            .web-laptop-frame {
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: 700px) {
+            .web-grid-row-5, .web-grid-row-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 420px) {
+            .web-grid-row-5, .web-grid-row-4 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .sensary-showcase-frame {
+            background: rgba(255, 255, 255, 0.4);
+            border: 3px solid #2c2520;
+            border-radius: 24px;
+            padding: 40px 20px;
+            margin: 40px auto 40px auto;
+            max-width: 1150px;
+            box-shadow: 10px 10px 0px 0px #8C7662;
+            position: relative;
+        }
+
+        .sensary-frame-title {
+            font-family: 'Georgia', serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2c2520;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            position: relative;
+            line-height: 1.3;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sensary-frame-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #8C7662;
+            margin: 15px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .iphone-horizontal-row-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 0;
+            flex-wrap: nowrap;
+        }
+
+        .iphone-premium-frame {
+            position: relative;
+            width: 160px;
+            height: 320px;
+            background: #2c2520;
+            border: 3px solid #8C7662;
+            border-radius: 20px;
+            padding: 8px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .iphone-premium-frame:hover {
+            z-index: 10;
+            transform: scale(1.08);
+            box-shadow: 0px 20px 40px rgba(44, 37, 32, 0.35);
+        }
+
+        .iphone-screen-content {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #1a1512;
+        }
+
+        .iphone-screen-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .ar-flashcard-gallery-outside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 850px;
+            margin: 60px auto 20px auto;
+            position: relative;
+            height: 440px;
+        }
+
+        .physical-flashcard {
+            background: #ffffff;
+            border: 4px solid #cbe7ff;
+            border-radius: 24px;
+            width: 210px;
+            padding: 12px 12px 24px 12px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s;
+            cursor: pointer;
+            transform-origin: bottom center;
+        }
+
+        .card-ar6 { transform: rotate(-15deg) translateX(-180px); z-index: 1; }
+        .card-ar7 { transform: rotate(-5deg) translateX(-60px); z-index: 2; }
+        .card-ar8 { transform: rotate(5deg) translateX(60px); z-index: 3; }
+        .card-ar9 { transform: rotate(15deg) translateX(180px); z-index: 4; }
+
+        .flashcard-inner-img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .flashcard-inner-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .flashcard-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #2c2520;
+            margin-top: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .physical-flashcard:hover {
+            z-index: 10;
+            transform: scale(1.08) rotate(0deg) translateY(-25px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+            border-color: #92cdff;
+        }
+
+        @media (max-width: 1024px) {
+            .modelling-gallery-outside {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 10px 20px;
+            }
+            .animation-gallery-outside {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .iphone-horizontal-row-section {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .iphone-premium-frame {
+                width: 140px;
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ar-flashcard-gallery-outside {
+                height: auto;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+            }
+            .physical-flashcard {
+                position: relative !important;
+                transform: none !important;
+                width: 45%;
+            }
+            .physical-flashcard:hover {
+                transform: scale(1.03) !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .physical-flashcard {
+                width: 100%;
+            }
+        }
+
+        .gallery-img-wrapper {
+            background: #ffffff;
+            border: 2px solid #2c2520;
+            border-radius: 14px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 6px 6px 0px 0px #8C7662;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .gallery-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-img-wrapper:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px 0px #2c2520;
+        }
+
+        .animation-row-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .img-link-wrapper-outside {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #ffffff;
+            border: 2px solid #2c2520;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 6px 6px 0px 0px #8C7662;
+            display: block;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+        }
+
+        .img-link-wrapper-outside img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .img-overlay-outside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(44, 37, 32, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .img-overlay-outside span {
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 0.9rem;
+            background: #8C7662;
+            padding: 8px 18px;
+            border-radius: 25px;
+            border: 2px solid #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+            z-index: 2;
+        }
+
+        .img-link-wrapper-outside:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px 0px #2c2520;
+        }
+
+        .img-link-wrapper-outside:hover .img-overlay-outside {
+            opacity: 1;
+        }
+
+        .img-link-wrapper-outside:hover .img-overlay-outside span {
+            transform: scale(1);
+        }
+
+        .img-caption-outside {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #2c2520;
+            margin-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .custom-image-lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(44, 37, 32, 0.92);
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .custom-image-lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-content-wrapper {
+            position: relative;
+            max-width: 85%;
+            max-height: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-content-wrapper img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border: 3px solid #2c2520;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0px 20px 40px rgba(0,0,0,0.6);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+        }
+
+        .custom-image-lightbox.active .lightbox-content-wrapper img {
+            transform: scale(1);
+        }
+
+        .lightbox-close-btn {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .lightbox-close-btn:hover {
+            color: #E6D7CE;
+            transform: scale(1.15);
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+
+        .slider-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            padding: 10px 0;
+        }
+        
+        .interactive-slider-container {
+            display: flex;
+            gap: 20px;
+            padding: 15px 10px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scroll-behavior: auto;
+        }
+        
+        .interactive-slider-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .logo-3d-item {
+            flex: 0 0 140px;
+            width: 140px;
+            height: 110px;
+            background: #ffffff;
+            border: 2px solid #2c2520;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 10px;
+            box-shadow: 5px 5px 0px 0px #8C7662;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.25s ease, border-color 0.25s ease;
+        }
+        .logo-3d-item span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #2c2520;
+            text-align: center;
+            white-space: nowrap;
+            transition: color 0.2s ease;
+        }
+        .logo-3d-item img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+        .logo-3d-item:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0px 0px #8C7662;
+            background-color: #2c2520;
+            border-color: #2c2520;
+        }
+        .logo-3d-item:hover span {
+            color: #e1d4ca !important;
+        }
+        .logo-3d-item:hover img {
+            transform: scale(1.08);
+        }
+        .logo-3d-item:active {
+            transform: translate(5px, 5px);
+            box-shadow: 0px 0px 0px 0px #8C7662;
+        }
+    </style>
+</head>
+
+    <div class="container">
+        <header class="perfect-blog-hero">
+            <div class="blog-hero-watermark">CREATIVE SPACE</div>
+            
+            <h1 class="perfect-blog-title">
+                MY <span>BLOG</span>
+            </h1>
+            
+            <p class="perfect-blog-desc">
+                Welcome to my corner of creativity and writing. Here I showcase my exploration of graphic design, 3D animation, and the latest in web and interactive application development.
+            </p>
+            
+            <div>
+                <a href="#technical-ecosystem-section" class="btn-perfect-3d">
+                    CLICK HERE
+                </a>
+            </div>
+        </header>
+    </div>
+
+
+
         </div>
 
-    </div>
-</main>
+    <script>
+        // Logik Infiniti Slider sedia ada anda kekal di sini
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.getElementById('infiniteSlider');
+            if (slider) {
+                const items = Array.from(slider.children);
+                if (items.length > 0) {
+                    items.forEach(item => {
+                        const clone = item.cloneNode(true);
+                        slider.appendChild(clone);
+                    });
+                    items.forEach(item => {
+                        const clone = item.cloneNode(true);
+                        slider.insertBefore(clone, slider.firstChild);
+                    });
+                    
+                    let itemWidth = items[0].getBoundingClientRect().width;
+                    let gap = parseInt(window.getComputedStyle(slider).gap) || 20;
+                    let totalOriginalWidth = (itemWidth + gap) * items.length;
+                    
+                    slider.scrollLeft = totalOriginalWidth;
+                    
+                    slider.addEventListener('scroll', () => {
+                        if (slider.scrollLeft >= totalOriginalWidth * 2) {
+                            slider.scrollLeft -= totalOriginalWidth;
+                        } else if (slider.scrollLeft <= 0) {
+                            slider.scrollLeft += totalOriginalWidth;
+                        }
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
