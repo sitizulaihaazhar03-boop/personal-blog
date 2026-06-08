@@ -2894,3 +2894,49 @@ footer {
             font-weight: 600;
             text-align: center;
         }
+
+        
+@media (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 1rem 5% !important;
+        background: rgba(44, 37, 32, 0.95) !important; 
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
+    }
+
+    .logo-container {
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .blog-logo, .logo-blog {
+        height: 40px !important; 
+    }
+
+    .glass-nav-container, .nav-container {
+        display: flex !important;
+        flex-direction: row !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 360px !important; 
+        gap: 4px !important; 
+        padding: 4px !important;
+        border-radius: 30px !important; 
+    }
+
+    
+    .nav-btn-3d, .nav-links a {
+        font-size: 0.78rem !important; 
+        padding: 0.5rem 0.8rem !important; 
+        font-weight: 700 !important;
+        text-align: center !important;
+        flex: 1 !important; 
+    }
+
+    .nav-btn-3d:hover {
+        transform: translateY(-2px) scale(1.02) !important;
+    }
+}
