@@ -10,6 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Georgia&display=swap" rel="stylesheet">
     
     <style>
+        /* 1. SEKAT OVERFLOW & PAKSA BOX-SIZING */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* Potong terus skrol melintang yang menyengetkan web */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Memastikan padding tidak membesarkan saiz asal kad */
+}
        
         * {
             box-sizing: border-box;
