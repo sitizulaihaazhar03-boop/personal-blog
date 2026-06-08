@@ -41,10 +41,10 @@ To achieve this level of functionality, I have utilized:
 | <img src="Laptop 9.png" width="400" alt="Desktop Contact"> | <img src="Phone 15.jpg" width="200" alt="Mobile Contact"> |
 | <img src="Laptop 10.png" width="400" alt="Desktop Footer"> | <img src="Phone 9.jpg" width="200" alt="Mobile Footer"> |
 | <img src="Laptop 11.png" width="400" alt="Desktop Home"> | <img src="Phone 10.jpg" width="200" alt="Mobile Home"> |
-| <img src="Laptop 12.png" width="400" alt="Desktop About"> | <img src="Phone 11.jpg" width="200" alt="Mobile About"> |
-| <img src="Laptop 13.png" width="400" alt="Desktop Blog"> | <img src="Phone 12.jpg" width="200" alt="Mobile Blog"> |
-| <img src="Laptop 14.png" width="400" alt="Desktop Contact"> | <img src="Phone 13.jpg" width="200" alt="Mobile Contact"> |
-| <img src="Laptop 15.png" width="400" alt="Desktop Footer"> | <img src="Phone 14.jpg" width="200" alt="Mobile Footer"> |
+| <img src="Laptop 15.png" width="400" alt="Desktop About"> | <img src="Phone 11.jpg" width="200" alt="Mobile About"> |
+| <img src="Laptop 12.png" width="400" alt="Desktop Blog"> | <img src="Phone 12.jpg" width="200" alt="Mobile Blog"> |
+| <img src="Laptop 13.png" width="400" alt="Desktop Contact"> | <img src="Phone 13.jpg" width="200" alt="Mobile Contact"> |
+| <img src="Laptop 14.png" width="400" alt="Desktop Footer"> | <img src="Phone 14.jpg" width="200" alt="Mobile Footer"> |
 
 ### 5. How to Run the Project
 To view or clone the repository:
