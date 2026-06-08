@@ -1,3 +1,6 @@
+personal-blog
+Individual Project: GitHub Portfolio (Personal Blog Page) for CSD34203
+
 # personal-blog
 Individual Project: GitHub Portfolio (Personal Blog Page) for CSD34203
 <video width="640" height="360" controls>
@@ -5,41 +8,47 @@ Individual Project: GitHub Portfolio (Personal Blog Page) for CSD34203
   Pelayar anda tidak menyokong tag video.
 </video>
 
-### 💡 Technical Challenges & Solutions
+##### Project Portfolio: Personal Blog Page
 
-During the development of this project, I encountered a few technical challenges that helped me improve my web development skills:
+### 1. Project Overview
+This project is a personal blog portfolio developed as part of the CSD 34203: Special Topics in Software Development course. The objective is to demonstrate proficiency in the software development process, including independent project management, problem-solving, and the application of an entrepreneurial mindset through high-quality documentation and execution.
 
-* Audio Autoplay Policy: I faced issues where browsers blocked the background music from playing automatically. I solved this by implementing a user-interaction-based trigger, ensuring the audio only starts after the user clicks the "Enter" or "Navigation" button.
-* Responsive Layout: Making the 3D-style navigation look consistent across mobile and desktop was challenging. I used CSS Media Queries to adjust the container sizes and font scaling, ensuring a seamless experience on smaller screens.
-* Form Submission: To ensure data integrity, I added HTML5 `required` attributes and JavaScript validation to the contact form, preventing empty submissions and improving user experience.
+### 2. Key Features
+The website has been developed with advanced interactive elements to provide a professionaluser experience:
+# Interactive Project Showcase:
+Each project listing includes information on the software used for development, with active, clickable buttons that redirect users to external websites to download or explore the software tools.
+# Integrated Blog Navigation:
+A dedicated page is provided for my personal blog. Users can easily navigate to the full blog site by clicking the active 'Click Here' button.
+# Enhanced Visual Interaction:
+Every image on the site is interactive; users can click on images to view them in a larger, high-definition format for better clarity.
+# Multimedia Integration:
+To provide a more engaging experience, I have implemented direct video connections that allow users to view linked content on YouTube directly from the images provided.
+# Dynamic Animations:
+The blog incorporates smooth animations to improve UI/UX, making the navigation and content interaction more fluid.
+# Functional Contact System:
+The contact page is fully operational, allowing users to send emails directly to me for any inquiries or collaboration opportunities.
+# Responsive Design:
+The entire site is fully responsive, ensuring it functions seamlessly across mobile and desktop devices.  
 
-### Personal Blog - Digital Portfolio
-# Description
-Individual Project: GitHub Portfolio (Personal Blog Page) for CSD34203. This project serves as my mini journal and digital portfolio, showcasing my journey in design, 3D modeling, and interactive experiences.
 
-# Features
-User Interaction: Dedicated buttons for smooth site navigation and user interaction.
-Software Toolkit: A curated list of software I use, complete with direct links for easy download and access.
-Project Showcase: A dedicated section featuring my 3D modeling and animation projects.
-Interactive Media:
--Embedded YouTube integration for video projects.
--Direct download options for my AR/VR projects.
-Dynamic Visuals: Images feature unique motion effects and can be opened in a modal popup for a closer look.
-Direct Communication: Integrated Gmail button for professional inquiries.
-Social Connectivity: Direct links to my professional and personal social media profiles.
+#### 3. Technologies Used
+To achieve this level of functionality, I have utilized:
+HTML5: For robust site structure.  
+CSS3: For advanced styling, layout responsiveness, and animation implementation.  
+JavaScript: For interactive button logic, email integration, and enhanced browser-based functionalities.  
+GitHub: For version control (with meaningful commits) and hosting via GitHub Pages.  
 
-# Technologies Used
-HTML5: Structure of the website.
-CSS3: Styling, layout, typography, and motion animations.
-JavaScript: Implementation of interactivity, including modal popups and smooth navigation.
 
-# Visuals
-(Sila muat naik screenshot laman web anda di sini. Contoh: jika fail gambar dalam folder 'assets', gunakan: ![Home Page](assets/home-page.jpg))
+#### 4. How to Run the Project
+To view or clone the repository:
+Clone the repository: git clone https://github.com/sitizulaihaazhar03-boop/personal-blog.git.  Accessing: Open the index.html file in any modern web browser.  
 
-# How to Run the Project
-Clone the repository: git clone [https://github.com/sitizulaihaazhar03-boop/personal-blog](https://github.com/sitizulaihaazhar03-boop/personal-blog)
-Open locally: Open the index.html file in your preferred web browser.
-No installation required: This is a static website and can be viewed directly after cloning.
 
-# Demo Link
-https://sitizulaihaazhar03-boop.github.io/personal-blog/ 
+#### Project Demo
+You can view the live, deployed version of the website here:
+
+
+https://sitizulaihaazhar03-boop.github.io/personal-blog/.
+
+#### 6. Development Process
+I have maintained an organized repository structure, ensuring that all source files and assets are categorized properly. By prioritizing clear communication through my README documentation and implementing user-focused features, this project reflects my commitment to value creation in software development.
